@@ -97,7 +97,6 @@ body {
     line-height: 0.95;
 }
 .hero-section{
-    display: inline-flexbox;
     align-items: center;
     text-align: center;
     background-color: var(--hero-section);
