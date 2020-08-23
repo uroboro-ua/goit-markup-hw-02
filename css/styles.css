@@ -1,11 +1,64 @@
 @font-face {
     font-family: "Raleway";
-    src: url("./fonts/Raleway-Bold.ttf") format("truetype");
-         font-weight: 700;
-         font-style: normal;
+    src: url("../fonts/Raleway-Bold.ttf") format("truetype");
 }
+
+:root {
+    --page-heading-color: #212121;
+    --page-text-color: #757575;
+    --link-hover-color: #2196F3;
+    --white-text-color: #FFFFFF;
+    --white-link-color: rgba(255, 255, 255, 0.6);
+    --footer-background: #2F303A;
+    --button-filter-color: #F5F4FA;
+    --hero-section: #2F303A;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--page-heading-color);
+}
+.link {
+    text-decoration: none;
+    color: var(--page-heading-color);
+}
+.link:hover{
+    color: var(--link-hover-color);
+}
+.button-order{
+    background-color: var(--link-hover-color);
+    color: var(--white-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+
+.button-filter{
+    font-size: 16px;
+    background-color: var(--button-filter-color);
+    color: var(--page-heading-color);
+    border-radius: 4px;
+    border-style: none;
+}
+.button-filter:hover{
+    background-color: var(--link-hover-color);
+    color: var(--white-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.address-description{
+    font-style: normal;
+}
+
 .logo{
     font-family: "Raleway", sans-serif;
+    font-style: normal;
     font-size: 36px;
 }
 .web{
@@ -17,37 +70,6 @@
 .studio-footer{
     color: var(--white-text-color);
 }
-:root {
-    --page-heading-color: #212121;
-    --page-text-color: #757575;
-    --link-hover-color: #2196F3;
-    --white-text-color: #FFFFFF;
-    --white-link-color: rgba(255, 255, 255, 0.6);
-    --footer-background: #2F303A;
-}
-
-body {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-}
-
-.link {
-    text-decoration: none;
-    color: var(--page-heading-color);
-}
-.link:hover{
-    color: var(--link-hover-color);
-}
-
-.list {
-    list-style: none;
-}
-
-.address-description{
-    font-style: normal;
-}
 
 .header-description {
     color: var(--page-text-color);
@@ -58,4 +80,33 @@ body {
 }
 .page-footer a{
     color: var(--white-link-color);
+}
+
+.header-section {
+    font-size: 36px;
+    line-height: 2.1;
+    text-align: center;
+}
+.advantage-header{
+    font-size: 14px;
+    line-height: 0.8;
+    text-transform: uppercase;
+}
+.fullname-header{
+    font-size: 16px;
+    line-height: 0.95;
+}
+.hero-section{
+    display: inline-flexbox;
+    align-items: center;
+    text-align: center;
+    background-color: var(--hero-section);
+}
+.page-header{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-text-color);
 }
